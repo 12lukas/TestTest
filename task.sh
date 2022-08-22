@@ -1,4 +1,3 @@
 !/bin/bash 
-wc -l *
-
+wc -l $1
 
