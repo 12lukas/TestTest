@@ -1,0 +1,1 @@
+scp /Users/lukas.toczynski/github/blog/* root@192.168.107.254:/var/www/html/
