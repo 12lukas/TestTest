@@ -1,49 +1,54 @@
  body {
-  background-color: #edd78e;
+ background: #C9CCD3;
+ }
+ .seiten{
+ padding: 15px;
  }
 
- .artikel1, .artikel2 , .artikel3 {
+ .artikel {
   min-height: 272px;  
   text-align: left;
   margin: auto;
   width: 1000px;
   background-color: white;
+  margin-bottom: 30px ;
 
  }
- .bild1, .bild2 , .bild3 {    
- border: 1px solid black;
+ .bild {    
+ border: 2px solid black;
  width: 290px;
  height: 270px;
  float: left; 
  margin-right: 10px;
  
  }
- .bild1 > img {
+ .bild > img {
  width: 100%;
  height: 100%;
  }
-.bild2 > img {
- width: 100%;
- height: 100%;
- }
-  .bild3 > img {
- width: 100%;
- height: 100%;
- }
+
 h1 , h2 {
-padding-top: 5px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-weight: bold;
-line-height: 10px;
+line-height: 20px;
 font-size: 24px;
+margin-top: 2px;
+padding: 10px;
+
 }
+
 h3 {
+  margin-top: 0;
   line-height: 1px ;
   font-size: 13px;
   color: gray;
-  padding: 0 0 10px 0;
+  padding: 5px;
+  padding: 10px;
 }
 .text{
+margin: auto;
+margin-left: 3px;
+padding: 5px;
 line-height: 25px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-size: 16px;
@@ -69,34 +74,37 @@ color: #8c2222 ;
 .top {
 text-align: center;
 }
-@media only screen and (max-width: 960px) {
-      .artikel1 ,.artikel2 , .artikel3 {
-      width: 95%;
-      margin-bottom: 20px;
-      padding: 5px ;
-      }
-      .bild1, .bild2, .bild3 {
-      float: none;
+@media only screen and (max-width: 1000px ) {
+      .artikel {
       width: 100%;
-      height: 5%;
-      padding: 0 1px 0 0 ;
+      margin-bottom: 20px;
+      }
+      .bild {
+      width: 100%;
+      height: 35%;
+      float: none;
+      margin-right: 0px;
 
       }
       h2, h3 {
       line-height: 25px;
 }
-.text {
-
-      padding: 5px;
+      .full{
+      width: 100%;
+      border-left: black solid 2px;
+      border-bottom:black solid 2px;
+      border-right: black solid 2px;
       }
       .text > a {
+      text-align: center;
       border: grey solid 1px  ;
       background-color: lightgrey;
-      padding: 5px;
       width: 90px;
       height: 25px;
       display: block;
-      text-align: center;
       margin: auto;
+      padding: 4px;
+      
+   
       }
 }
