@@ -78,7 +78,8 @@ h2 {
   }
   .text a,
   .mail a {
-    border: none;
+    border: 2px solid #154c79;
+    color: #154c79;
     background-color: transparent;
     font-size: 20px;
   }
@@ -86,5 +87,10 @@ h2 {
     width: 500px;
     float: left;
     margin-right: 15px;
+  }
+  .text a:hover,
+  .mail a:hover {
+    color: white;
+    background-color: #154c79;
   }
 }
