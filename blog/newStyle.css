@@ -1,3 +1,6 @@
+html {
+  font-size: 16px;
+}
 body {
   background: #c9ccd3;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -6,12 +9,10 @@ body {
 .artikelbild > img {
   width: 100%;
 }
-.unterText > p {
-  font-size: 16px;
-}
+
 .artikel {
-  border: 2px solid black;
-  margin-bottom: 15px;
+  border: 0.12rem solid black;
+  margin-bottom: 1rem;
 }
 
 .bild img {
@@ -19,74 +20,84 @@ body {
 }
 
 h3 {
-  font-size: 13px;
+  font-size: 0.8rem;
   color: gray;
-  margin-bottom: 20px;
-  margin-top: 0px;
+  margin-bottom: 1.25rem;
+  margin-top: 0rem;
 }
+
 h1 {
   text-align: center;
 }
+
 h2 {
-  margin-top: 0px;
-  margin-bottom: 2px;
+  margin-top: 0rem;
+  margin-bottom: 0.12rem;
 }
+
 h1,
 h2 {
-  font-size: 24px;
-  padding: 5px;
+  font-size: 1.5rem;
+  padding: 0.31rem;
 }
+
 .text {
-  margin-bottom: 10px;
-  padding: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 0.62rem;
+  padding: 0.62rem;
 }
+
 .text a,
 .mail a {
   text-align: center;
-  width: 150px;
-  height: 30px;
+  width: 9.3rem;
+  height: 1.8rem;
   margin: auto;
   display: block;
-  border: 2px solid #154c79;
+  border: 0.12rem solid #154c79;
   color: #154c79;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-decoration: none;
 }
-  .text a:hover,
-  .mail a:hover {
-    color: white;
-    background-color: #154c79;
+
+.text a:hover,
+.mail a:hover {
+  color: white;
+  background-color: #154c79;
+}
+
+@media only screen and (min-width: 65.62rem) {
+  .artikel {
+    max-width: 62.5rem;
+    margin: auto;
+    margin-bottom: 0.93rem;
   }
 
-@media only screen and (min-width: 1050px) {
-  .artikel {
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 15px;
-  }
   .text {
+    font-size: 1rem;
     display: inline-block;
-    max-width: 635px;
-    min-height: 200px;
+    max-width: 39.68rem;
+    min-height: 12.5rem;
   }
+
   .bild {
-    width: 333px;
-    height: 222px;
+    width: 20.81rem;
+    height: 13.87rem;
     float: left;
-    margin-right: 10px;
+    margin-right:  0.62rem;
     text-align: center;
     background-color: whitesmoke;
   }
+
   .bild > img {
     height: 100%;
     width: auto;
   }
 
   .artikelbild > img {
-    width: 500px;
+    width: 31.25rem;
     float: left;
     margin-right: 15px;
   }
-
 }
