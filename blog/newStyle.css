@@ -9,10 +9,10 @@ body {
 .artikelbild > img {
   width: 100%;
 }
-.unterText > p {
+.post__text > p {
   font-size: 1rem;
 }
-.artikel {
+.post {
   border: 2px solid black;
   margin-bottom: 15px;
 }
@@ -43,12 +43,12 @@ h2 {
   padding: 0.31rem;
 }
 
-.text {
+.post__title {
   margin-bottom: 10px;
   padding: 0.62rem;
 }
 
-.text a,
+.post__text a,
 .mail a {
   text-align: center;
   width: 150px;
@@ -62,7 +62,7 @@ h2 {
   text-decoration: none;
 }
 
-  .text a:hover,
+  .post__title a:hover,
   .mail a:hover {
     color: white;
     background-color: #154c79;
@@ -72,13 +72,13 @@ h2 {
   html {
   font-size: 16px;
   }
-  .artikel {
+  .post {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 15px;
   }
 
-  .text {
+  .post__title {
     display: inline-block;
     max-width: 635px;
     min-height: 200px;
@@ -103,4 +103,4 @@ h2 {
     float: left;
     margin-right: 15px;
   }
-
+}
