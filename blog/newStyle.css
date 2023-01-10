@@ -6,28 +6,6 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.artikelbild > img {
-  width: 100%;
-}
-.post__text > p {
-  font-size: 1rem;
-}
-.post {
-  border: 2px solid black;
-  margin-bottom: 15px;
-}
-
-.bild img {
-  width: 100%;
-}
-
-h3 {
-  font-size: 0.81rem;
-  color: gray;
-  margin-bottom: 20px;
-  margin-top: 0px;
-}
-
 h1 {
   text-align: center;
 }
@@ -37,10 +15,22 @@ h2 {
   margin-bottom: 2px;
 }
 
+h3 {
+  font-size: 0.81rem;
+  color: gray;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
 h1,
 h2 {
   font-size: 1.5rem;
   padding: 0.31rem;
+}
+
+.post {
+  border: 2px solid black;
+  margin-bottom: 15px;
 }
 
 .post__title {
@@ -48,7 +38,23 @@ h2 {
   padding: 0.62rem;
 }
 
-.post__text a,
+.post__text--normal {
+  font-size: 1rem;
+}
+
+.post__text--small {
+  font-size: 0.5rem;
+}
+
+.post__text--large {
+  font-size: 2rem;
+}
+
+.post_image img {
+  width: 100%;
+}
+
+.post__content a,
 .mail a {
   text-align: center;
   width: 150px;
@@ -61,12 +67,15 @@ h2 {
   font-size: 1.25rem;
   text-decoration: none;
 }
-
   .post__title a:hover,
   .mail a:hover {
     color: white;
     background-color: #154c79;
   }
+
+.artikelbild > img {
+  width: 100%;
+}
 
 @media only screen and (min-width: 1050px) {
   html {
@@ -84,7 +93,7 @@ h2 {
     min-height: 200px;
   }
 
-  .bild {
+  .post_image {
     width: 333px;
     height: 222px;
     float: left;
@@ -93,7 +102,7 @@ h2 {
     background-color: whitesmoke;
   }
 
-  .bild > img {
+  .post_image > img {
     height: 100%;
     width: auto;
   }
