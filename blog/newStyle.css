@@ -80,22 +80,25 @@ h2 {
   html {
   font-size: 16px;
   }
+
   .post {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 15px;
   }
+
   .post__title {
   display: inline-block;
   margin-bottom: 1px;
   padding: 0.62rem;
   }
+  
   .post__content {
     max-width: 635px;
     min-height: 150px;
     padding-left: 10px;
-  
   }
+
   .post__body {
     display: inline-block;
     max-width: 635px;
