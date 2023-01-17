@@ -30,29 +30,28 @@ h2 {
 .post {
   border: 2px solid black;
   margin-bottom: 15px;
-}
+  &__title {
+    margin-bottom: 10px;
+    padding: 0.62rem;
+  }
 
-.post__title {
-  margin-bottom: 10px;
-  padding: 0.62rem;
-}
+  &__text {
+    &--normal {
+      font-size: 1rem;
+    }
 
-.post__text--normal {
-  font-size: 1rem;
-}
+    &--small {
+      font-size: 0.5rem;
+    }
 
-.post__text--small {
-  font-size: 0.5rem;
+    &--large {
+      font-size: 2rem;
+    }
+  }
+  &_image img {
+    width: 100%;
+  }
 }
-
-.post__text--large {
-  font-size: 2rem;
-}
-
-.post_image img {
-  width: 100%;
-}
-
 .post__content a,
 .mail a {
   text-align: center;
@@ -66,11 +65,11 @@ h2 {
   font-size: 1.25rem;
   text-decoration: none;
 }
-  .post__title a:hover,
-  .mail a:hover {
-    color: white;
-    background-color: #154c79;
-  }
+.post__title a:hover,
+.mail a:hover {
+  color: white;
+  background-color: #154c79;
+}
 
 .artikelbild > img {
   width: 100%;
@@ -78,47 +77,45 @@ h2 {
 
 @media only screen and (min-width: 1050px) {
   html {
-  font-size: 16px;
+    font-size: 16px;
   }
 
   .post {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 15px;
-  }
+    &__title {
+      display: inline-block;
+      margin-bottom: 1px;
+      padding: 0.62rem;
+    }
 
-  .post__title {
-  display: inline-block;
-  margin-bottom: 1px;
-  padding: 0.62rem;
-  }
-  
-  .post__content {
-    max-width: 635px;
-    min-height: 150px;
-    padding-left: 10px;
-  }
+    &__content {
+      max-width: 635px;
+      min-height: 150px;
+      padding-left: 10px;
+    }
 
-  .post__body {
-    display: inline-block;
-    max-width: 635px;
-    min-height: 200px;
-  }
+    &__body {
+      display: inline-block;
+      max-width: 635px;
+      min-height: 200px;
+    }
 
-  .post_image {
-    width: 333px;
-    height: 222px;
-    float: left;
-    margin-right: 10px;
-    text-align: center;
-    background-color: whitesmoke;
-  }
+    &_image {
+      width: 333px;
+      height: 222px;
+      float: left;
+      margin-right: 10px;
+      text-align: center;
+      background-color: whitesmoke;
+    }
 
-  .post_image > img {
-    height: 100%;
-    width: auto;
+    &_image > img {
+      height: 100%;
+      width: auto;
+    }
   }
-
   .artikelbild > img {
     width: 500px;
     float: left;
