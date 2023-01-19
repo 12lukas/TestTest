@@ -1,22 +1,25 @@
-$body-backgroundcolor: #c9ccd3;
-$a-border-color: #154c79;
-$a-text-color: #ffffff;
-$post-border-color: #000000;
-$post-image-backgroundcolor: #f5f5f5;
-
+:root {
+--body-backgroundcolor: #c9ccd3;
+--a-border-color: #154c79;
+--a-text-color: #ffffff;
+--post-border-color: #000000;
+--post-image-backgroundcolor: #f5f5f5;
+}
 html {
   font-size: 18px;
 }
 body {
-  background: $body-backgroundcolor;
+  background: var(--body-backgroundcolor);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1 {
   text-align: center;
+  color: var(--post-text-color);
 }
 
 h2 {
+  color: var(--post-text-color);
   margin-top: 0px;
   margin-bottom: 2px;
 }
@@ -32,10 +35,14 @@ h1,
 h2 {
   font-size: 1.5rem;
 }
+p{
+  color: var(--post-text-color);
+}
 
 .post {
-  border: 2px solid $post-border-color;
+  border: 2px solid var(--post-border-color);
   margin-bottom: 15px;
+  color: var(--post-text-color);
   &__title {
     margin-bottom: 10px;
     padding: 0.62rem;
@@ -67,8 +74,8 @@ h2 {
   height: 30px;
   margin: auto;
   display: block;
-  border: 2px solid $a-border-color;
-  color: $a-border-color;
+  border: 2px solid var(--a-border-color);
+  color: var(--a-border-color);
   background-color: transparent;
   font-size: 1.25rem;
   text-decoration: none;
@@ -76,62 +83,26 @@ h2 {
 
 .post__text a:hover,
 .mail a:hover {
-  color: $a-text-color;
-  background-color: $a-border-color;
+  color: var(--a-text-hover-color);
+  background-color: var(--a-border-color);
 }
 
 .artikelbild > img {
   width: 100%;
 }
 @media (prefers-color-scheme: dark) {
-  $body-backgroundcolor: #221f1f;
-  $a-border-color: #26608f;
-  $a-text-color: #ffffff;
-  $a-text-backgroundcolor: #242424;
-  $a-text-hover-color: #ababab;
-  $post-border-color: #796c6c;
-  $post-image-backgroundcolor: #f5f5f5;
-  $post-text-color: #777777;
-  $post-image-color: #353535;
-
-  body {
-    background-color: $body-backgroundcolor;
-  }
-
-  p {
-    color: $post-text-color;
-  }
-
-  h2 {
-    color: $post-text-color;
-  }
-
-  .post {
-    color: $post-text-color;
-    border-color: $post-border-color;
-    body &__image {
-      background-color: $post-image-color;
-    }
-  }
-
-  .post__content a,
-  .mail a {
-    color: $a-border-color;
-    border-color: $a-border-color;
-    background-color: $a-text-backgroundcolor;
-  }
-
-  .post__text a:hover,
-  .mail a:hover {
-    color: $a-text-hover-color;
-    background-color: $a-border-color;
-  }
-
-  .topic {
-    color: $post-text-color;
-  }
+:root {
+  --body-backgroundcolor: #221f1f;
+  --a-border-color: #26608f;
+  --a-text-color: #ffffff;
+  --a-text-backgroundcolor: #242424;
+  --a-text-hover-color: #ababab;
+  --post-border-color: #796c6c;
+  --post-image-backgroundcolor: #292929;
+  --post-text-color: #777777;
+  --post-image-color: #353535;
 }
-
+}
 @media only screen and (min-width: 1050px) {
   html {
     font-size: 16px;
@@ -166,7 +137,7 @@ h2 {
       float: left;
       margin-right: 10px;
       text-align: center;
-      background-color: $post-image-backgroundcolor;
+      background-color: var(--post-image-backgroundcolor);
     }
 
     &__image > img {

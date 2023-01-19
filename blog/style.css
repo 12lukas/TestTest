@@ -1,17 +1,27 @@
+:root {
+  --body-backgroundcolor: #c9ccd3;
+  --a-border-color: #154c79;
+  --a-text-color: #ffffff;
+  --post-border-color: #000000;
+  --post-image-backgroundcolor: #f5f5f5;
+}
+
 html {
   font-size: 18px;
 }
 
 body {
-  background: #c9ccd3;
+  background: var(--body-backgroundcolor);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1 {
   text-align: center;
+  color: var(--post-text-color);
 }
 
 h2 {
+  color: var(--post-text-color);
   margin-top: 0px;
   margin-bottom: 2px;
 }
@@ -28,9 +38,14 @@ h2 {
   font-size: 1.5rem;
 }
 
+p {
+  color: var(--post-text-color);
+}
+
 .post {
-  border: 2px solid #000000;
+  border: 2px solid var(--post-border-color);
   margin-bottom: 15px;
+  color: var(--post-text-color);
 }
 .post__title {
   margin-bottom: 10px;
@@ -56,8 +71,8 @@ h2 {
   height: 30px;
   margin: auto;
   display: block;
-  border: 2px solid #154c79;
-  color: #154c79;
+  border: 2px solid var(--a-border-color);
+  color: var(--a-border-color);
   background-color: transparent;
   font-size: 1.25rem;
   text-decoration: none;
@@ -65,8 +80,8 @@ h2 {
 
 .post__text a:hover,
 .mail a:hover {
-  color: #ffffff;
-  background-color: #154c79;
+  color: var(--a-text-hover-color);
+  background-color: var(--a-border-color);
 }
 
 .artikelbild > img {
@@ -74,35 +89,16 @@ h2 {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #221f1f;
-  }
-  p {
-    color: #777777;
-  }
-  h2 {
-    color: #777777;
-  }
-  .post {
-    color: #777777;
-    border-color: #796c6c;
-  }
-  body .post__image {
-    background-color: #353535;
-  }
-  .post__content a,
-.mail a {
-    color: #26608f;
-    border-color: #26608f;
-    background-color: #242424;
-  }
-  .post__text a:hover,
-.mail a:hover {
-    color: #ababab;
-    background-color: #26608f;
-  }
-  .topic {
-    color: #777777;
+  :root {
+    --body-backgroundcolor: #221f1f;
+    --a-border-color: #26608f;
+    --a-text-color: #ffffff;
+    --a-text-backgroundcolor: #242424;
+    --a-text-hover-color: #ababab;
+    --post-border-color: #796c6c;
+    --post-image-backgroundcolor: #292929;
+    --post-text-color: #777777;
+    --post-image-color: #353535;
   }
 }
 @media only screen and (min-width: 1050px) {
@@ -135,7 +131,7 @@ h2 {
     float: left;
     margin-right: 10px;
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: var(--post-image-backgroundcolor);
   }
   .post__image > img {
     height: 100%;
