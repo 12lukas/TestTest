@@ -81,6 +81,9 @@ p {
   font-size: 1.25rem;
   text-decoration: none;
 }
+.post__content {
+  padding-left: 20px;
+}
 .post__image img {
   width: 100%;
 }
@@ -135,12 +138,10 @@ p {
     padding: 0.62rem;
   }
   .post__content {
-    max-width: 635px;
     min-height: 150px;
     padding-left: 10px;
   }
   .post__body {
-    max-width: 635px;
     min-height: 200px;
   }
   .post__image {
@@ -158,4 +159,6 @@ p {
     width: 500px;
     margin-right: 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
