@@ -102,9 +102,9 @@ p {
 }
 
 .mail a {
-@include a__button(); 
+  @include a__button(); 
   & a:hover {
-  @include a__button__hover();
+    @include a__button__hover();
   }
 }
 
