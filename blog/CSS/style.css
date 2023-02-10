@@ -71,18 +71,20 @@ p {
 }
 .post__content a {
   text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 150px;
   height: 30px;
   margin: auto;
-  display: block;
+  display: flex;
   border: 2px solid var(--a-border-color);
   color: var(--a-border-color);
   background-color: transparent;
   font-size: 1.25rem;
   text-decoration: none;
 }
-.post__content {
-  padding-left: 20px;
+.post__content p {
+  padding-left: 15px;
 }
 .post__image img {
   width: 100%;
@@ -90,10 +92,12 @@ p {
 
 .mail a {
   text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 150px;
   height: 30px;
   margin: auto;
-  display: block;
+  display: flex;
   border: 2px solid var(--a-border-color);
   color: var(--a-border-color);
   background-color: transparent;
@@ -139,7 +143,6 @@ p {
   }
   .post__content {
     min-height: 150px;
-    padding-left: 10px;
   }
   .post__body {
     min-height: 200px;
@@ -159,6 +162,4 @@ p {
     width: 500px;
     margin-right: 15px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

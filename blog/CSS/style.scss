@@ -8,10 +8,12 @@
 
 @mixin post__button {
   text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 150px;
   height: 30px;
   margin: auto;
-  display: block;
+  display: flex;
   border: 2px solid var(--a-border-color);
   color: var(--a-border-color);
   background-color: transparent;
@@ -89,15 +91,15 @@ p {
   }
 
   &__text a:hover {
-    @include button__hover();
+    @include post__button__hover();
   }
 
   &__content a {
-    @include button();
+    @include post__button();
   }
 
-  &__content {
-    padding-left: 20px;
+  &__content p{
+    padding-left: 15px;
   }
 
   &__image img {
@@ -106,9 +108,9 @@ p {
 }
 
 .mail a {
-  @include button();
+  @include post__button();
   & a:hover {
-    @include button__hover();
+    @include post__button__hover();
   }
 }
 
@@ -148,7 +150,6 @@ p {
 
     &__content {
       min-height: 150px;
-      padding-left: 10px;
     }
 
     &__body {
