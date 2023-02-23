@@ -40,13 +40,13 @@ body {
   border-bottom: 2px solid var(--post-border-color);
   height: 5vh;
   justify-content: end;
-}
 
-.header__button {
+&__button {
   @include post__button();
   margin: 0px;
   height: 35px;
   margin: auto;
+}
 }
 
 .header__button:hover {
